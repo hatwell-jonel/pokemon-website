@@ -8,7 +8,7 @@ function Header() {
       <header className="header">
         <ul>
           <li>
-            <Link className="links" to="/pokemon-website">
+            <Link className="links" to="/">
               Home
             </Link>
           </li>
