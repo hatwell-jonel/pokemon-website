@@ -1,0 +1,62 @@
+.header {
+  position: absolute !important;
+  width: 100% !important;
+  min-width: 300px;
+  z-index: 999;
+  height: 60px;
+  top: 0;
+
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #fff;
+
+  @include breakpoint(lg) {
+    height: 90px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      margin: 0rem 0.8rem;
+      img {
+        width: 85px;
+        @include breakpoint(lg) {
+          width: 150px;
+        }
+      }
+
+      .links {
+        color: $clr-yellow;
+        font-weight: bold;
+        letter-spacing: 1px;
+        text-shadow: 1px 2px 3px $clr-blue;
+        font-size: 1rem;
+
+        @include breakpoint(lg) {
+          font-size: 1.5rem;
+        }
+
+        &:hover {
+          transition: 0.3s ease;
+          font-size: 1.059rem;
+          border-bottom: 1px solid $clr-yellow;
+
+          @include breakpoint(lg) {
+            font-size: 1.65rem;
+          }
+        }
+      }
+    }
+    .header-logo {
+      margin: 0rem 0.4rem;
+
+      @include breakpoint(lg) {
+        margin: 0rem 1rem;
+      }
+    }
+  }
+}

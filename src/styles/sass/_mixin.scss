@@ -1,0 +1,33 @@
+@mixin breakpoint($breakpoints) {
+  @if $breakpoints == sm {
+    @media screen and (min-width: 576px) {
+      @content;
+    }
+  } @else if $breakpoints == md {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoints == lg {
+    @media screen and (min-width: 992px) {
+      @content;
+    }
+  } @else if $breakpoints == xlg {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else if $breakpoints == xxl {
+    @media screen and (min-width: 1400px) {
+      @content;
+    }
+  }
+}
+
+@mixin glass() {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
