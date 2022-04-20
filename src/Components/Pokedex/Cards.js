@@ -11,7 +11,7 @@ function Cards({ pokemon, loading, infoPokemon }) {
         pokemon.map((item) => {
           return (
             <>
-              <Link to={`/${item.name}`}>
+              <Link to={`/pokedex/${item.name}`}>
                 <div
                   className="card"
                   key={item.name}
