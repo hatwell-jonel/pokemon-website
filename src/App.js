@@ -9,7 +9,7 @@ import ErrorPage from "./Components/ErrorPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename="pokemon-website">
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/pokedex" exact element={<Pokedex />} />
